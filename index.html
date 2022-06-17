@@ -9,45 +9,122 @@
 </head>
 <body>
     <header>
-        <h1>6 Day Workweek</h1>
+        <h1>CSS Snippet Cheatsheet</h1>
             <p class="head-text">This class is pretty demanding, so through this grid we are going to show you how we spend six days for this class.
-            
             </p>
     </header>
-    <main>
+    <main class="grid">
         <section>
-        <h2>Sunday</h2>
-            <p class="first-text">We had to cram the prework in before class.</p>
-                <pre class="second-text"><code> 
-                    h1 {
-                        text-align: center;
-                        margin: auto;
-                        border: 3px solid red;
-                        border-width: 10px 5px;
-                        font-size: 100px;
-                        }
-                </code> </pre>
+            <h2 id="header-1" class="container-header">Flexbox Row</h2>
+            <div class="container"> 
+                <p class="container-text">Use these three properties to create a Flexbox row layout.</p>
+                    <div> 
+                   <pre class="css-text">
+                <code> .row{
+                diplay: flex:
+                flex-direction: row:
+                flex-wrap: wrap:
+                }
+                </code>
+            </pre>
+        </div>
+        </div>
         </section>
-        <h2>Monday</h2>
-            <p>At the start of the class, we learned how to clone down from gitlab and create a repo.
-            
-            </p>
-        <h2>Tuesday</h2>
-            <p>
-                Learned how to write html.
-            </p>
-        <h2>Wednesday</h2>
-            <p>
-                Started getting to know CSS.
-            </p>
-        <h2>Thursday</h2>
-            <p>
-            Turned in our first challenge.
-            </p>
-        <h2>Friday</h2>
-            <p>
-            Did our first mini project with a partner.
-            </p>
+        
+        <section>
+             <h2 class="container-header">Flexbox Column</h2>
+             <div class="container">
+                    <p class="container-text">At the start of the class, we learned how to clone down from gitlab and create a repo.</p>
+                        <div> 
+                        <pre class="css-text">
+                <code> .column {
+                    display: flex:
+                flex-direction:column 
+                }
+                </code>
+            </pre>
+            </div>
+        </div>
+        </section>
+        
+        <section>  
+        <h2 class="container-header">CSS Grid Layout</h2>
+        <div class="container">
+            <p class="container-text">Build a 12-column layout using CSS Grid</p>
+        <div>
+            <pre class="css-text">
+                <code> .{
+                display: grid:
+                width: 100%
+                grid-template-columns:
+               repeat (12. 1fr):
+                }
+                </code>
+            </pre>
+        </div>
+        </div>
+        </section>
+       
+        <section> 
+        <h2 class="container-header">Linear Gradients</h2>
+        <div class="container"> 
+        <p class="container-text">This will create a background linear gradient from top to bottom.</p>
+        <div> 
+        <pre class="css-text">
+            <code>
+                .linear-gradient-background {
+                    background-image: linear-
+                    gradient( 
+                        rgba(232, 102, 236. 0.3) 0%
+                        rgba(232, 102, 236. 0.6) 100%
+                    );
+                }
+            </code>
+        </pre>
+     </div>
+    </div>
+        </section>
+         
+        <section>
+         <h2 class="container-header">Box Transition Glow</h2>
+        <div class="container">
+        <p class="container-text">Use transition and box shadows to glow on hover.</p>
+        <div>
+        <pre class="css-text">
+            <code>
+                .code-card .card-header {
+                    border-radius: 8px:
+                    transition: all 0.5s ease-in
+                   out:
+                   }
+                .code-card:hover 
+                .code-card:hover  .card-header {
+                    box-shadow: inset 0px 0px 8px
+                rgba(232, 102, 236, 1). 0 0 15px
+                rgba(232, 102, 236, 1);
+                }
+            </code>
+        </pre>
+     </div>
+        </div>
+        </section>
+
+    <section>
+    <h2 class="container-header">Overlay Card with Title</h2>
+        <div class="container">
+        <p class="container-text">Use position properties and negative margins to raise elements higher than their natural startting point.</p>
+        <div>
+        <pre class="css-text">
+            <code>
+                .card-header {
+                    position: relative;
+                    margin-top: -20px;
+                }
+            </code>
+        </pre>
+     </div>
+        </div>
+        </section>
     </main>
     </body>
 </html>
