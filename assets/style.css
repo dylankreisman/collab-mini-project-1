@@ -1,4 +1,5 @@
 
+
 body {
     background-color: azure;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -24,11 +25,19 @@ h2 {
     margin: 5px;
     padding: 4px;
     z-index: 2;
-   position: relative;
-   left: 28px;
-   bottom: 20px;
-   overflow: visible;
-   background-color: lightsalmon;
+    position: relative;
+    left: 95px;
+    bottom: 20px;
+    overflow: visible;
+    background-color: lightsalmon;
+}
+
+.css-text {
+    white-space: pre-line;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 50px;
+    background: linear-gradient(45deg, red, orange) ;
 }
 
 #header-1 {
@@ -38,16 +47,23 @@ h2 {
 .grid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 2em;
 }
+
 
 .container{
     z-index: 1;
+    display: block;
 }
 
 .grid section {
     border: 3px dashed black;
     justify-items: center;
+}
+
+section:hover {
+    box-shadow: 10px 10px;
 }
 
 .grid section .container-text {
@@ -56,6 +72,3 @@ h2 {
     margin: 3px:
 }
 
-.center-css .css-text {
-   align-content: start;
-}
